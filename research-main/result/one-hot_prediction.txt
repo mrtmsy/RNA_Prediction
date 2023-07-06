@@ -1,0 +1,61 @@
+(gcn) dl-box@DL-BoxII:~/murata/research-main/program/prediction$ python prediction.py 
+creating dataloader for evaluation...
+37522 is loaded
+loss:: 0.31164673977298263
+test_sensitivity: 0.84638345503971
+test_specificity: 0.8815628164809978
+test_accuracy: 0.863973135760354
+test_mcc: 0.7283971386472741
+test_auc: 0.9425884123781578
+test_precision: 0.877244351140821
+test_recall: 0.84638345503971
+test_f1: 0.861537626824372
+test_AUPRC: 0.9449870954778086
+test_true_negative:: value: 16539.000000
+test_false_positive:: value: 2222.000000
+test_false_negative:: value: 2882.000000
+test_true_positive:: value: 15879.000000
+Done!!
+26.394582608016208
+(gcn) dl-box@DL-BoxII:~/murata/research-main/program/prediction$ python prediction.py 
+creating dataloader for evaluation...
+37522 is loaded
+loss:: 0.31164673977298263
+test_sensitivity: 0.84638345503971
+test_specificity: 0.8815628164809978
+test_accuracy: 0.863973135760354
+test_mcc: 0.7283971386472741
+test_auc: 0.9425884123781578
+test_precision: 0.877244351140821
+test_recall: 0.84638345503971
+test_f1: 0.861537626824372
+test_AUPRC: 0.9449870954778086
+test_true_negative:: value: 16539.000000
+test_false_positive:: value: 2222.000000
+test_false_negative:: value: 2882.000000
+test_true_positive:: value: 15879.000000
+Done!!
+26.249724948080257
+(gcn) dl-box@DL-BoxII:~/murata/research-main/program/prediction$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

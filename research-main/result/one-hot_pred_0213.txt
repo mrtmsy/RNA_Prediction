@@ -1,0 +1,61 @@
+(ufold) kurata-lab@kuratalab-Super-Server:~/murata/research-main/program/prediction$ python prediction.py 
+creating dataloader for evaluation...
+37522 is loaded
+loss:: 0.275952110958668
+test_sensitivity: 0.8930760620436011
+test_specificity: 0.8705825915462928
+test_accuracy: 0.881829326794947
+test_mcc: 0.7638519158506345
+test_auc: 0.9543496697881665
+test_precision: 0.8734295991242246
+test_recall: 0.8930760620436011
+test_f1: 0.8831435800126503
+test_AUPRC: 0.9559925238012542
+test_true_negative:: value: 16333.000000
+test_false_positive:: value: 2428.000000
+test_false_negative:: value: 2006.000000
+test_true_positive:: value: 16755.000000
+run time : 13.64336109161377
+Done!!
+(ufold) kurata-lab@kuratalab-Super-Server:~/murata/research-main/program/prediction$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

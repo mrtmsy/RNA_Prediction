@@ -1,0 +1,614 @@
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot train --in ./main_test/train_gt_out --out train_out  
+zsh: command not found: rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot train --in ./main_test/train_gt_out --out ./main_test/train_out_0212 --add-test ./main_test/test_gt_out
+zsh: command not found: rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot -h
+zsh: command not found: rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % 
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % 
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % 
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % conda deactivate
+(base) muratamasaya@muratamasayanoMacBook-puro RNAProt % conda activate rnaprotenv
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot -h
+zsh: command not found: rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % conda install -c bioconda rnaprot
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/anaconda3/envs/rnaprotenv
+
+  added / updated specs:
+    - rnaprot
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    configspace-0.6.1          |   py38hbd87e4b_0         716 KB  conda-forge
+    cryptography-39.0.1        |   py38h4257468_0         1.1 MB  conda-forge
+    jpeg-9e                    |       hb7f2c08_3         226 KB  conda-forge
+    matplotlib-3.6.3           |   py38h50d1736_0           8 KB  conda-forge
+    matplotlib-base-3.6.3      |   py38hcb346ec_0         6.4 MB  conda-forge
+    numpy-1.24.2               |   py38h5a2dcdf_0         6.0 MB  conda-forge
+    pandas-1.5.3               |   py38hec72209_0        10.7 MB  conda-forge
+    pytorch-1.13.1             |cpu_py38hbb7d42a_1        56.6 MB  conda-forge
+    pytz-2022.7.1              |     pyhd8ed1ab_0         182 KB  conda-forge
+    requests-2.28.2            |     pyhd8ed1ab_0          55 KB  conda-forge
+    scikit-learn-1.2.1         |   py38h573ff9c_0         6.6 MB  conda-forge
+    scipy-1.10.0               |   py38hfb8b963_2        20.5 MB  conda-forge
+    tenacity-8.2.1             |     pyhd8ed1ab_0          22 KB  conda-forge
+    zipp-3.13.0                |     pyhd8ed1ab_0          17 KB  conda-forge
+    zstd-1.5.2                 |       hbc0c0cd_6         399 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       109.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  appdirs            conda-forge/noarch::appdirs-1.4.4-pyh9f0ad1d_0 
+  bedtools           bioconda/osx-64::bedtools-2.30.0-h0e31d98_3 
+  brotli             conda-forge/osx-64::brotli-1.0.9-hb7f2c08_8 
+  brotli-bin         conda-forge/osx-64::brotli-bin-1.0.9-hb7f2c08_8 
+  brotlipy           conda-forge/osx-64::brotlipy-0.7.0-py38hef030d1_1005 
+  certifi            conda-forge/noarch::certifi-2022.12.7-pyhd8ed1ab_0 
+  cffi               conda-forge/osx-64::cffi-1.15.1-py38hb368cf1_3 
+  charset-normalizer conda-forge/noarch::charset-normalizer-2.1.1-pyhd8ed1ab_0 
+  configspace        conda-forge/osx-64::configspace-0.6.1-py38hbd87e4b_0 
+  contourpy          conda-forge/osx-64::contourpy-1.0.7-py38h98b9b1b_0 
+  cryptography       conda-forge/osx-64::cryptography-39.0.1-py38h4257468_0 
+  cycler             conda-forge/noarch::cycler-0.11.0-pyhd8ed1ab_0 
+  fonttools          conda-forge/osx-64::fonttools-4.38.0-py38hef030d1_1 
+  freetype           conda-forge/osx-64::freetype-2.12.1-h3f81eb7_1 
+  hpbandster         conda-forge/noarch::hpbandster-0.7.4-pyhd8ed1ab_0 
+  idna               conda-forge/noarch::idna-3.4-pyhd8ed1ab_0 
+  importlib-metadata conda-forge/noarch::importlib-metadata-6.0.0-pyha770c72_0 
+  joblib             conda-forge/noarch::joblib-1.2.0-pyhd8ed1ab_0 
+  jpeg               conda-forge/osx-64::jpeg-9e-hb7f2c08_3 
+  kiwisolver         conda-forge/osx-64::kiwisolver-1.4.4-py38h98b9b1b_1 
+  lcms2              conda-forge/osx-64::lcms2-2.12-h577c468_0 
+  libblas            conda-forge/osx-64::libblas-3.9.0-16_osx64_openblas 
+  libbrotlicommon    conda-forge/osx-64::libbrotlicommon-1.0.9-hb7f2c08_8 
+  libbrotlidec       conda-forge/osx-64::libbrotlidec-1.0.9-hb7f2c08_8 
+  libbrotlienc       conda-forge/osx-64::libbrotlienc-1.0.9-hb7f2c08_8 
+  libcblas           conda-forge/osx-64::libcblas-3.9.0-16_osx64_openblas 
+  libcxx             conda-forge/osx-64::libcxx-14.0.6-hccf4f1f_0 
+  libgfortran        conda-forge/osx-64::libgfortran-5.0.0-11_3_0_h97931a8_27 
+  libgfortran5       conda-forge/osx-64::libgfortran5-11.3.0-h082f757_27 
+  liblapack          conda-forge/osx-64::liblapack-3.9.0-16_osx64_openblas 
+  libopenblas        conda-forge/osx-64::libopenblas-0.3.21-openmp_h429af6e_3 
+  libpng             conda-forge/osx-64::libpng-1.6.39-ha978bb4_0 
+  libprotobuf        conda-forge/osx-64::libprotobuf-3.21.12-hbc0c0cd_0 
+  libtiff            conda-forge/osx-64::libtiff-4.2.0-h1167814_3 
+  libwebp-base       conda-forge/osx-64::libwebp-base-1.2.4-h775f41a_0 
+  llvm-openmp        conda-forge/osx-64::llvm-openmp-15.0.7-h61d9ccf_0 
+  logomaker          bioconda/noarch::logomaker-0.8-pyh864c0ab_1 
+  markdown           conda-forge/noarch::markdown-3.2.2-py_0 
+  matplotlib         conda-forge/osx-64::matplotlib-3.6.3-py38h50d1736_0 
+  matplotlib-base    conda-forge/osx-64::matplotlib-base-3.6.3-py38hcb346ec_0 
+  mkl                conda-forge/osx-64::mkl-2022.2.1-h44ed08c_16952 
+  more-itertools     conda-forge/noarch::more-itertools-9.0.0-pyhd8ed1ab_0 
+  munkres            bioconda/noarch::munkres-1.0.7-py_1 
+  netifaces          conda-forge/osx-64::netifaces-0.11.0-py38hef030d1_1 
+  numpy              conda-forge/osx-64::numpy-1.24.2-py38h5a2dcdf_0 
+  olefile            conda-forge/noarch::olefile-0.46-pyh9f0ad1d_1 
+  openjpeg           conda-forge/osx-64::openjpeg-2.4.0-h6e7aa92_1 
+  packaging          conda-forge/noarch::packaging-23.0-pyhd8ed1ab_0 
+  pandas             conda-forge/osx-64::pandas-1.5.3-py38hec72209_0 
+  patsy              conda-forge/noarch::patsy-0.5.3-pyhd8ed1ab_0 
+  perl               conda-forge/osx-64::perl-5.32.1-2_h0d85af4_perl5 
+  pillow             conda-forge/osx-64::pillow-8.2.0-py38h83525de_1 
+  plotly             conda-forge/noarch::plotly-5.13.0-pyhd8ed1ab_0 
+  pooch              conda-forge/noarch::pooch-1.6.0-pyhd8ed1ab_0 
+  pycparser          conda-forge/noarch::pycparser-2.21-pyhd8ed1ab_0 
+  pyopenssl          conda-forge/noarch::pyopenssl-23.0.0-pyhd8ed1ab_0 
+  pyparsing          conda-forge/noarch::pyparsing-3.0.9-pyhd8ed1ab_0 
+  pyro4              conda-forge/noarch::pyro4-4.82-pyhd8ed1ab_0 
+  pysocks            conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6 
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.2-pyhd8ed1ab_0 
+  python_abi         conda-forge/osx-64::python_abi-3.8-3_cp38 
+  pytorch            conda-forge/osx-64::pytorch-1.13.1-cpu_py38hbb7d42a_1 
+  pytz               conda-forge/noarch::pytz-2022.7.1-pyhd8ed1ab_0 
+  requests           conda-forge/noarch::requests-2.28.2-pyhd8ed1ab_0 
+  rnaprot            bioconda/noarch::rnaprot-0.5-pyhdfd78af_1 
+  scikit-learn       conda-forge/osx-64::scikit-learn-1.2.1-py38h573ff9c_0 
+  scipy              conda-forge/osx-64::scipy-1.10.0-py38hfb8b963_2 
+  seaborn            conda-forge/noarch::seaborn-0.12.2-hd8ed1ab_0 
+  seaborn-base       conda-forge/noarch::seaborn-base-0.12.2-pyhd8ed1ab_0 
+  serpent            conda-forge/noarch::serpent-1.41-pyhd8ed1ab_0 
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0 
+  sleef              conda-forge/osx-64::sleef-3.5.1-h6db0672_2 
+  statsmodels        conda-forge/osx-64::statsmodels-0.13.5-py38hbd87e4b_2 
+  tbb                conda-forge/osx-64::tbb-2021.7.0-hb8565cd_1 
+  tenacity           conda-forge/noarch::tenacity-8.2.1-pyhd8ed1ab_0 
+  threadpoolctl      conda-forge/noarch::threadpoolctl-3.1.0-pyh8a188c0_0 
+  tornado            conda-forge/osx-64::tornado-6.2-py38hef030d1_1 
+  typing_extensions  conda-forge/noarch::typing_extensions-4.4.0-pyha770c72_0 
+  ucsc-bigwigaverag~ bioconda/osx-64::ucsc-bigwigaverageoverbed-366-h1341992_0 
+  ucsc-twobitinfo    bioconda/osx-64::ucsc-twobitinfo-366-h5eb252a_0 
+  ucsc-twobittofa    bioconda/osx-64::ucsc-twobittofa-366-h1341992_0 
+  unicodedata2       conda-forge/osx-64::unicodedata2-15.0.0-py38hef030d1_0 
+  urllib3            conda-forge/noarch::urllib3-1.26.14-pyhd8ed1ab_0 
+  ushuffle           bioconda/osx-64::ushuffle-1.2.2-py38h431a6f7_5 
+  viennarna          bioconda/osx-64::viennarna-2.5.1-py38pl5321h6a1f747_0 
+  zipp               conda-forge/noarch::zipp-3.13.0-pyhd8ed1ab_0 
+  zlib               conda-forge/osx-64::zlib-1.2.13-hfd90126_4 
+  zstd               conda-forge/osx-64::zstd-1.5.2-hbc0c0cd_6 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+                                                                                        
+Preparing transaction: done                                                             
+Verifying transaction: done                                                             
+Executing transaction: done                                                             
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot -h
+usage: rnaprot [-h] [-v] {train,eval,predict,gt,gp} ...
+
+Modelling RBP binding preferences to predict RPB binding sites.
+
+positional arguments:
+  {train,eval,predict,gt,gp}
+                        Program modes
+    train               Train a binding site prediction model
+    eval                Evaluate properties learned from training set
+    predict             Predict binding sites (whole sites or profiles)
+    gt                  Generate training data set
+    gp                  Generate prediction data set
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot train --in ./main_test/train_gt_out --out ./main_test/train_out_0212 --add-test ./main_test/test_gt_out
+usage: rnaprot [-h] [-v] {train,eval,predict,gt,gp} ...
+rnaprot: error: unrecognized arguments: ./main_test/test_gt_out
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % rnaprot train --in ./main_test/train_gt_out --out ./main_test/train_out_0212 --add-test                       
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-12 16:10:07
+Training set input folder:     ./main_test/train_gt_out
+Model training output folder:  ./main_test/train_out_0212
+Read in feature infos from ./main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+# training instances:    90056
+# validation instances:  30020
+# test instances:        30020
+Training model ... 
+^CTraceback (most recent call last):
+  File "/opt/anaconda3/envs/rnaprotenv/bin/rnaprot", line 6166, in <module>
+    main_train(args)
+  File "/opt/anaconda3/envs/rnaprotenv/bin/rnaprot", line 1487, in main_train
+    val_auc, val_acc, c_epochs = rnn_util.train_model(args, train_loader,
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 403, in train_model
+    train_loss = train(model, optimizer, train_loader, criterion, device)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 247, in train
+    loss.backward()
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro RNAProt % cd bin 
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % ls
+gtf_extract_gene_regions.py		gtf_extract_transcript_regions.py	rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot -h
+usage: rnaprot [-h] [-v] {train,eval,predict,gt,gp} ...
+
+Modelling RBP binding preferences to predict RPB binding sites.
+
+positional arguments:
+  {train,eval,predict,gt,gp}
+                        Program modes
+    train               Train a binding site prediction model
+    eval                Evaluate properties learned from training set
+    predict             Predict binding sites (whole sites or profiles)
+    gt                  Generate training data set
+    gp                  Generate prediction data set
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot -h
+usage: rnaprot [-h] [-v] {train,eval,predict,gt,gp} ...
+
+aaaaaaaaaaa Modelling RBP binding preferences to predict RPB binding sites.
+
+positional arguments:
+  {train,eval,predict,gt,gp}
+                        Program modes
+    train               Train a binding site prediction model
+    eval                Evaluate properties learned from training set
+    predict             Predict binding sites (whole sites or profiles)
+    gt                  Generate training data set
+    gp                  Generate prediction data set
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ./main_test/train_gt_out --out ./main_test/train_out_0213 --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 12:37:48
+Traceback (most recent call last):
+  File "rnaprot", line 6194, in <module>
+    main_train(args)
+  File "rnaprot", line 804, in main_train
+    assert os.path.exists(args.in_folder), "--in folder does not exist"
+AssertionError: --in folder does not exist
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ../main_test/train_gt_out --out ../main_test/train_out_0213 --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 12:39:47
+Training set input folder:     ../main_test/train_gt_out
+Model training output folder:  ../main_test/train_out_0213
+Read in feature infos from ../main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+# training instances:    90057
+# validation instances:  22515
+# test instances:        37524
+Training model ... 
+^CTraceback (most recent call last):
+  File "rnaprot", line 6194, in <module>
+    main_train(args)
+  File "rnaprot", line 1509, in main_train
+    val_auc, val_acc, c_epochs = rnn_util.train_model(args, train_loader,
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 403, in train_model
+    train_loss = train(model, optimizer, train_loader, criterion, device)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 247, in train
+    loss.backward()
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ../main_test/train_gt_out --out ../main_test/train_out_0213 --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 12:58:21
+Training set input folder:     ../main_test/train_gt_out
+Model training output folder:  ../main_test/train_out_0213
+Read in feature infos from ../main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+# training instances:    90057
+# validation instances:  22515
+# test instances:        37524
+Training model ... 
+aaaa
+^CTraceback (most recent call last):
+  File "rnaprot", line 6196, in <module>
+    elif args.which == 'eval':
+  File "rnaprot", line 1510, in main_train
+    val_auc, val_acc, c_epochs = rnn_util.train_model(args, train_loader,
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 403, in train_model
+    train_loss = train(model, optimizer, train_loader, criterion, device)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 247, in train
+    loss.backward()
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % ls
+gtf_extract_gene_regions.py		gtf_extract_transcript_regions.py	rnaprot
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ../main_test/train_gt_out --out ../main_test/train_out_0213 --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 13:57:21
+Training set input folder:     ../main_test/train_gt_out
+Model training output folder:  ../main_test/train_out_0213
+Read in feature infos from ../main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+# training instances:    90057
+# validation instances:  22515
+# test instances:        37524
+Training model ... 
+aaaa
+あ    
+
+
+^CTraceback (most recent call last):
+  File "rnaprot", line 6195, in <module>
+    main_train(args)
+  File "rnaprot", line 1510, in main_train
+    val_auc, val_acc, c_epochs = rnn_util.train_model(args, train_loader,
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 403, in train_model
+    train_loss = train(model, optimizer, train_loader, criterion, device)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 244, in train
+    outputs, _ = model(batch_data, batch_lens, len(batch_labels))
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/RNNNets.py", line 285, in forward
+    out, hidden = self.gru(x_packed, h0)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/nn/modules/rnn.py", line 922, in forward
+    max_batch_size = batch_sizes[0]
+KeyboardInterrupt
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ../main_test/train_gt_out --out ../main_test/train_out_0213 --verbose-train --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 14:21:30
+Training set input folder:     ../main_test/train_gt_out
+Model training output folder:  ../main_test/train_out_0213
+Read in feature infos from ../main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+Train set indices:       [  7752 102321  15979 ...  76799  75404  39673]
+Validation set indices:  [102239  40457  26010 ...  34462   3249  17649]
+Test set indices:        37524
+# training instances:    90057
+# validation instances:  22515
+# test instances:        37524
+Training model ... 
+aaaa
+Reporting: (train_loss, val_loss, val_acc, val_auc)
+Epoch 1: (0.5898941927049393, 0.41271025719389554, 0.8247450060167757, 0.8991342439097093)
+Saving model ... 
+^CTraceback (most recent call last):
+  File "rnaprot", line 6195, in <module>
+    main_train(args)
+  File "rnaprot", line 1510, in main_train
+    val_auc, val_acc, c_epochs = rnn_util.train_model(args, train_loader,
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 403, in train_model
+    train_loss = train(model, optimizer, train_loader, criterion, device)
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/rnaprot/rnn_util.py", line 247, in train
+    loss.backward()
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/_tensor.py", line 488, in backward
+    torch.autograd.backward(
+  File "/opt/anaconda3/envs/rnaprotenv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 197, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % python rnaprot train --in ../main_test/train_gt_out --out ../main_test/train_out_0213 --verbose-train --add-test
+
+      ____  _   _____    ____  ____  ____  ______
+     / __ \/ | / /   |  / __ \/ __ \/ __ \/_  __/
+    / /_/ /  |/ / /| | / /_/ / /_/ / / / / / /
+   / _, _/ /|  / ___ |/ ____/ _, _/ /_/ / / /
+  /_/ |_/_/ |_/_/  |_/_/   /_/ |_|\____/ /_/
+
+
+Running for you in TRAIN mode ... 
+Start time: 2023-02-13 14:25:52
+Training set input folder:     ../main_test/train_gt_out
+Model training output folder:  ../main_test/train_out_0213
+Read in feature infos from ../main_test/train_gt_out/features.out ... 
+Read in sequences ... 
+CUDA: I'm NOT available. Using CPU ... 
+# dataset features:  4
+Dataset size:        150096
+Using 20.0%  for validation and testing ... 
+Train set indices:       [ 32552   4589  20426 ...  81459  89617 103936]
+Validation set indices:  [ 50119  84805  19996 ...   2401  98001 100281]
+Test set indices:        37524
+# training instances:    90057
+# validation instances:  22515
+# test instances:        37524
+Training model ... 
+Reporting: (train_loss, val_loss, val_acc, val_auc)
+Epoch 1: (0.6002099890867609, 0.45295724313099756, 0.78678491771089, 0.891931347255271)
+Saving model ... 
+Epoch 2: (0.40631824133675637, 0.36077225016351017, 0.844124162805054, 0.9255657635217615)
+Saving model ... 
+Epoch 3: (0.3589325193784627, 0.3257870496563612, 0.8615225381703175, 0.9368250493686224)
+Saving model ... 
+Epoch 4: (0.34217969968600437, 0.3120328621045764, 0.8665779704793858, 0.940537060353501)
+Saving model ... 
+Epoch 5: (0.33370474328261496, 0.31262817252828573, 0.86781965483583, 0.9423133499468552)
+Epoch 6: (0.32758960429338396, 0.3068913948382374, 0.8703917171103991, 0.9438107897349373)
+Saving model ... 
+Epoch 7: (0.3226754722453101, 0.30081132983872816, 0.8718994788478589, 0.9455686505747838)
+Saving model ... 
+Epoch 8: (0.3184889879775971, 0.2968398960145505, 0.8730081257693255, 0.9467266872480586)
+Saving model ... 
+Epoch 9: (0.3153303580248736, 0.2938349443873961, 0.8745602324373706, 0.9475236292443794)
+Saving model ... 
+Epoch 10: (0.31250029847245775, 0.29238948427503064, 0.8755210597076332, 0.9483557085729077)
+Saving model ... 
+Epoch 11: (0.3101094352761453, 0.28841421504484505, 0.8773835873656686, 0.9492375506648689)
+Saving model ... 
+Epoch 12: (0.30680634831162273, 0.28857643104793496, 0.8781522503184638, 0.9497316393157031)
+Epoch 13: (0.30350315536646505, 0.284613545384244, 0.8793348068672907, 0.9506027026976271)
+Saving model ... 
+Epoch 14: (0.30196567250123163, 0.28351102055919297, 0.8797339195687067, 0.9509818552647125)
+Saving model ... 
+Epoch 15: (0.2987687306650019, 0.285558430616548, 0.8802217263604479, 0.9509373161513857)
+Epoch 16: (0.29707300712947865, 0.2826241282371847, 0.881019951895441, 0.9517345106504308)
+Saving model ... 
+Epoch 17: (0.29539633935763593, 0.2843894544122697, 0.8805912743650889, 0.952097826562286)
+Epoch 18: (0.2938588128053622, 0.2822052996680918, 0.8814781928009574, 0.952572176601731)
+Saving model ... 
+Epoch 19: (0.29239951380495904, 0.27985073790837733, 0.8831189914447505, 0.9528399320685608)
+Saving model ... 
+Epoch 20: (0.2900320614334637, 0.28044712650042597, 0.8829859534811286, 0.9533192177471919)
+Epoch 21: (0.2879638070384798, 0.2778900410337181, 0.8839172171119047, 0.9534373969128037)
+Saving model ... 
+Epoch 22: (0.28679490343171576, 0.2796613312736501, 0.8835181037496833, 0.9539754289283501)
+Epoch 23: (0.28518566434351916, 0.2799524920677149, 0.8842719835611246, 0.9540222524022597)
+Epoch 24: (0.284401159773452, 0.2814905182364356, 0.8836511407881777, 0.9543344088949893)
+Epoch 25: (0.28323910314808276, 0.27793675713040894, 0.8852032479848672, 0.9545758409528267)
+Epoch 26: (0.28195942966307697, 0.27640040833341684, 0.8852475939727411, 0.9547820804434856)
+Saving model ... 
+Epoch 27: (0.28168187188016336, 0.27622547607381637, 0.8859127815441123, 0.9549558180991208)
+Saving model ... 
+Epoch 28: (0.280303062446829, 0.27659469257188907, 0.8846710963947017, 0.955203456200475)
+Epoch 29: (0.27994642433515426, 0.2740498249289356, 0.8858684346311109, 0.9553290723603843)
+Saving model ... 
+Epoch 30: (0.277798167565224, 0.27528602332902596, 0.8870214275404513, 0.9556373979133459)
+Epoch 31: (0.27795496954699045, 0.27909081179566736, 0.8851589018648321, 0.95556432599219)
+Epoch 32: (0.2760105565256004, 0.2712442318605048, 0.887198812945719, 0.9558471527153677)
+Saving model ... 
+Epoch 33: (0.2758775107347522, 0.2748351240426785, 0.88529193811036, 0.9558045468260227)
+Epoch 34: (0.27511570519137624, 0.27211432557039306, 0.887331851041502, 0.956061622216692)
+Epoch 35: (0.27348422142845835, 0.27020610315969673, 0.8874648883443186, 0.9560964202483638)
+Saving model ... 
+Epoch 36: (0.27270702583088235, 0.27468348605392406, 0.8850702102855674, 0.9562771766906591)
+Epoch 37: (0.2722466546475708, 0.27391317178349006, 0.8853806318042019, 0.9563705316822033)
+Epoch 38: (0.27266240571682976, 0.26951898068235947, 0.8884848440830037, 0.9565757493259005)
+Saving model ... 
+Epoch 39: (0.2717285393531513, 0.2717438108876576, 0.8875535803200665, 0.9564919026400627)
+Epoch 40: (0.27051533634319164, 0.2710546236778931, 0.8875535813773551, 0.9567140695291185)
+Epoch 41: (0.2700221332938552, 0.2740937291272026, 0.8862232025341026, 0.9566117546362223)
+Epoch 42: (0.26939905108660084, 0.27362422608691217, 0.8864892783291852, 0.9564565917122327)
+Epoch 43: (0.2686374962112445, 0.2750320188467857, 0.8867110094580047, 0.9564672994058785)
+Epoch 44: (0.2685813079093017, 0.2767938670385633, 0.8851589016005099, 0.9565136888907306)
+Epoch 45: (0.26867181426801157, 0.26934091702464313, 0.8878640010457346, 0.9568976113920897)
+Saving model ... 
+Epoch 46: (0.2665714934557289, 0.27242179003829775, 0.8867997001121419, 0.9568801965948335)
+Epoch 47: (0.26732453913555865, 0.27276379698624803, 0.8870214282012567, 0.9569081060365621)
+Epoch 48: (0.2665456508974823, 0.277029836750973, 0.8860014737841824, 0.9567408466539435)
+Epoch 49: (0.2667204480847116, 0.2717132754963079, 0.8878196550578605, 0.956786581209855)
+Epoch 50: (0.2657089175951108, 0.27513057243326305, 0.8856910512082593, 0.9568897759169309)
+Epoch 51: (0.26523305241754475, 0.26951996553230095, 0.8883961517107725, 0.9572230637313878)
+Epoch 52: (0.2651289232387196, 0.27311635401919765, 0.8871988132100412, 0.9567877056360486)
+Epoch 53: (0.2635647354800923, 0.2720655788024902, 0.887198812813558, 0.957256615030859)
+Epoch 54: (0.26282678989966063, 0.271289029754508, 0.8875979253828129, 0.9571009589374861)
+Epoch 55: (0.26447058657851125, 0.26949283379383837, 0.8875535807165497, 0.957083358708542)
+Epoch 56: (0.26303782016930743, 0.2711197686690424, 0.8872875037320173, 0.9572488190092509)
+Epoch 57: (0.262304338296598, 0.2710060728058242, 0.8869179534806381, 0.9572193156440763)
+Epoch 58: (0.2616864006600223, 0.27087014975771223, 0.8882187689487263, 0.9569383432377792)
+Epoch 59: (0.2614009487908504, 0.2729706180749563, 0.8855432323500216, 0.9572241763215161)
+Epoch 60: (0.2612002780486526, 0.2741618689208356, 0.8866962255236843, 0.9571099701284543)
+Epoch 61: (0.26045445393505073, 0.2694444137495305, 0.8877161812623694, 0.9573088673133376)
+Epoch 62: (0.26095452454855167, 0.26881896230066826, 0.8884404966413578, 0.9573592968417765)
+Saving model ... 
+Epoch 63: (0.260771608263592, 0.2701584481475567, 0.8879822558680025, 0.9572458915557929)
+Epoch 64: (0.25949232879117, 0.2693420083899247, 0.8878048731059562, 0.9573490704814485)
+Epoch 65: (0.2595729330412699, 0.2710578286254668, 0.8874501065245753, 0.957317697017973)
+Epoch 66: (0.2587547452908206, 0.27098642484548224, 0.8872283763208834, 0.9572453549875042)
+Epoch 67: (0.2576297205207287, 0.2726913276359078, 0.88616407406568, 0.9571618870557523)
+Epoch 68: (0.2591705518649484, 0.27123706985547125, 0.8875535796592611, 0.9571349718435)
+Epoch 69: (0.2583700082974028, 0.2717575415846456, 0.8866518791393272, 0.9572077044641203)
+Epoch 70: (0.25785679392808575, 0.27133812655575035, 0.8871840308616536, 0.9572901860571057)
+Epoch 71: (0.25768798434733153, 0.27107865621639626, 0.886829263090823, 0.9570990414949246)
+Epoch 72: (0.2572814052759071, 0.27376728557346397, 0.8867110073434276, 0.9568909595234502)
+Epoch 73: (0.2568396465358927, 0.275043417566648, 0.8860310371593467, 0.9569992989735308)
+Epoch 74: (0.25677893143782815, 0.26961526857424706, 0.8871101203091657, 0.9570685005013679)
+Epoch 75: (0.2564415853468785, 0.2736376969285629, 0.8869327380757639, 0.9570914466864249)
+Epoch 76: (0.25624991220269644, 0.2714450017474848, 0.8867405720402026, 0.9569426752376401)
+Epoch 77: (0.25611834728525007, 0.2727991550359995, 0.88572061537639, 0.9568583314370641)
+Epoch 78: (0.25587876163847395, 0.2735611462649996, 0.884567623392177, 0.9564969566399009)
+Epoch 79: (0.255213901809675, 0.2729015696910443, 0.8860310367628634, 0.9570565697476519)
+Epoch 80: (0.25575275718412943, 0.27830751530797965, 0.8858536545294615, 0.9567742874834732)
+Epoch 81: (0.2551022949011404, 0.2796942735847409, 0.8855136689748574, 0.956795821231417)
+Epoch 82: (0.25455588932347806, 0.27470977218209863, 0.8846119691157288, 0.9565604847471547)
+Epoch 83: (0.2553943077453231, 0.27145130203322465, 0.8868883915592456, 0.9569770313895447)
+Epoch 84: (0.2541501359671551, 0.2753634140865024, 0.8838137426556082, 0.9566936680980783)
+Epoch 85: (0.25406530833794194, 0.27586712052351947, 0.8845232764791755, 0.9565781599378453)
+Epoch 86: (0.25372822044418775, 0.2759017478505056, 0.8840354720663337, 0.9564731464220844)
+Epoch 87: (0.25343775481362235, 0.27851323109652076, 0.8849815171203698, 0.956815413864669)
+Epoch 88: (0.2534255197292739, 0.2789488813227451, 0.8856762705779657, 0.9565237179833057)
+Epoch 89: (0.25290760080940605, 0.2730560536824569, 0.8868883908984402, 0.9566555401867318)
+Epoch 90: (0.25290934265937925, 0.27285144800560596, 0.8856319239292864, 0.9567195890808542)
+Epoch 91: (0.25203893335228833, 0.27800620328233744, 0.8855432327465049, 0.956430647057326)
+Epoch 92: (0.25208783833663295, 0.27550675942186725, 0.8859571273998252, 0.9565207352948766)
+# epochs used to train model:   93
+Model validation set accuracy:  0.888440
+Model validation set AUC:       0.957359
+Run time start!!
+Testing model ... 
+Model test set accuracy:        0.865082
+Model test set AUC:             0.940173
+Run time : 11.824586000000636
+Get positive site scores from trained model ... 
+Maximum whole-site score:  7.987107
+Minimum whole-site score:  -6.629773
+25th percentile score:  1.66169273853302
+50th percentile score:  3.608930468559265
+75th percentile score:  5.319549083709717
+Get additional site stats ... 
+
+End time:             2023-02-13 16:09:50
+Run time (HH:MM:SS):  01:43:58
+
+=========================
+  MODEL HYPERPARAMETERS
+=========================
+Batch size:                50
+Learning rate:             0.001
+Weight decay:              0.0005
+RNN model type:            GRU
+Bidirectional RNN:         False
+# RNN layers:              1
+# RNN layer dimensions:    32
+# fully connected layers:  1
+Dropout rate:              0.5
+Embedding:                 False
+
+Model (hyper)parameters file:
+../main_test/train_out_0213/final.params
+Model file:
+../main_test/train_out_0213/final.model
+
+(rnaprotenv) muratamasaya@muratamasayanoMacBook-puro bin % 
